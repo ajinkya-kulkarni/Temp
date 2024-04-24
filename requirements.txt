@@ -1,0 +1,11 @@
+streamlit
+numpy
+Pillow
+pandas
+matplotlib
+opencv-python
+scikit-image
+torch 
+torchvision 
+torchaudio
+cellpose
