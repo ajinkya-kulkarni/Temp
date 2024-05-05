@@ -5,7 +5,7 @@ pandas
 matplotlib
 opencv-python
 scikit-image
-torch 
-torchvision 
+torch
+torchvision
 torchaudio
 cellpose
