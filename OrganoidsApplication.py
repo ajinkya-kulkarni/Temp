@@ -52,14 +52,14 @@ with st.form(key = 'form1', clear_on_submit = False):
 	# Multiple file uploader allows user to add their own TIF images
 	uploaded_file = st.file_uploader("Drag and drop folder containing the images", type=["tif", "tiff"], accept_multiple_files=False)
 
-	# Number input for live/dead threshold
-	live_dead_threshold = st.number_input(
-	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids. Default is 50.",
+	# Slider for live/dead threshold
+	live_dead_threshold = st.slider(
+	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids.",
 	    min_value=0, max_value=255, value=50, step=1
 	)
-
+	
 	live_dead_threshold = int(live_dead_threshold)
-
+	
 	submitted = st.form_submit_button('Analyze')
 
 	####################################################################################
