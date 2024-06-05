@@ -54,7 +54,7 @@ with st.form(key = 'form1', clear_on_submit = False):
 
 	# Slider for live/dead threshold
 	live_dead_threshold = st.slider(
-	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids.",
+	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids. Default value is 50, as used in :blue[[this publication](%s)]" % url1,
 	    min_value=0, max_value=255, value=50, step=1
 	)
 	
