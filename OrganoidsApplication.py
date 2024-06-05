@@ -46,7 +46,7 @@ st.title(':blue[Analyze Organoids using OrganoIDNet]')
 url1 = "https://doi.org/10.1007/s13402-024-00958-2"
 url2 = "https://www.biorxiv.org/content/10.1101/2024.02.12.580032v1"
 url3 = "https://github.com/ajinkya-kulkarni/PyOrganoIDNet"
-st.markdown("Refer to the following sources for more information about :blue[[OrganoIDNet](%s)] and its applicability: :blue[[Article #1](%s)] and :blue[[Article #2](%s)]." % (url3, url1, url2))
+st.markdown("Refer to the following sources for more information about :blue[[OrganoIDNet](%s)], its development and its applicability: :blue[[Article #1](%s)] and :blue[[Article #2](%s)]." % (url3, url1, url2))
 
 with st.form(key = 'form1', clear_on_submit = False):
 
