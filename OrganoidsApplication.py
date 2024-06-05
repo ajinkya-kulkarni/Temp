@@ -30,8 +30,6 @@ model_path = 'OrganoidsTrainedModel'
 window_size = 800
 overlap = int(0.5 * window_size)
 
-live_dead_threshold = 70
-
 ###########################################################################################
 
 with open("logo.jpg", "rb") as f:
@@ -49,6 +47,10 @@ with st.form(key = 'form1', clear_on_submit = False):
 
 	# Multiple file uploader allows user to add their own TIF images
 	uploaded_file = st.file_uploader("Drag and drop folder containing the images", type=["tif", "tiff"], accept_multiple_files=False)
+
+	# Number input for live/dead threshold
+	live_dead_threshold = st.number_input("Live/Dead Threshold", min_value=0, max_value=255, value=50, step=1)
+	live_dead_threshold = int(live_dead_threshold)
 
 	submitted = st.form_submit_button('Analyze')
 
