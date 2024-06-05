@@ -42,7 +42,9 @@ st.set_page_config(page_title = 'OrganoIDNet', page_icon = image_bytes, layout =
 # Title of the web app
 
 st.title(':blue[Analyze Organoids using OrganoIDNet]')
-st.markdown(':blue[Refer to https://doi.org/10.1007/s13402-024-00958-2 for more information]')
+
+url = "https://doi.org/10.1007/s13402-024-00958-2"
+st.markdown("Refer to :blue[[link](%s)] for more information" % url)
 
 with st.form(key = 'form1', clear_on_submit = False):
 
