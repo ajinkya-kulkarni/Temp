@@ -50,11 +50,10 @@ with st.form(key = 'form1', clear_on_submit = False):
 
 	# Number input for live/dead threshold
 	live_dead_threshold = st.number_input(
-	    "Set the intensity threshold for distinguishing live and dead organoids (0-255). "
-	    "If you want to set a custom value, please first convert your image to 8-bit grayscale and decide the value accordingly. "
-	    "A lower value means more organoids will be classified as 'live'. The default is set to 50.",
+	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids. Convert your image to 8-bit grayscale to determine a custom value. "\n"Lower values classify more organoids as 'live'. Default is 50.",
 	    min_value=0, max_value=255, value=50, step=1
 	)
+
 
 	live_dead_threshold = int(live_dead_threshold)
 
