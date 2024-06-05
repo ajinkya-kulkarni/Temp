@@ -48,6 +48,8 @@ url2 = "https://www.biorxiv.org/content/10.1101/2024.02.12.580032v1"
 url3 = "https://github.com/ajinkya-kulkarni/PyOrganoIDNet"
 st.markdown("Refer to the following sources for more information about :blue[[OrganoIDNet](%s)], its development and its applicability: :blue[[Article #1](%s)] and :blue[[Article #2](%s)]." % (url3, url1, url2))
 
+st.divider()
+
 with st.form(key = 'form1', clear_on_submit = False):
 
 	# Slider for live/dead threshold
@@ -55,10 +57,14 @@ with st.form(key = 'form1', clear_on_submit = False):
 	
 	live_dead_threshold = int(live_dead_threshold)
 
+	st.divider()
+
 	# Multiple file uploader allows user to add their own TIF images
 	uploaded_file = st.file_uploader("Drag and drop folder containing the images", type=["tif", "tiff"], accept_multiple_files=False)
 	
 	submitted = st.form_submit_button('Analyze')
+
+	st.divider()
 
 	####################################################################################
 
