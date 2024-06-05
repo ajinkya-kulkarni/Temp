@@ -50,16 +50,13 @@ st.markdown("Refer to the following sources for more information about :blue[[Or
 
 with st.form(key = 'form1', clear_on_submit = False):
 
-	# Multiple file uploader allows user to add their own TIF images
-	uploaded_file = st.file_uploader("Drag and drop folder containing the images", type=["tif", "tiff"], accept_multiple_files=False)
-
 	# Slider for live/dead threshold
-	live_dead_threshold = st.slider(
-	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids. Default value is 50, as used in :blue[[this article.](%s)]" % url1,
-	    min_value=0, max_value=255, value=50, step=1
-	)
+	live_dead_threshold = st.slider("Set the intensity threshold (0-255) for distinguishing live/dead organoids. Default value is 50, as used in :blue[[this article.](%s)]" % url1, min_value=0, max_value=255, value=50, step=1)
 	
 	live_dead_threshold = int(live_dead_threshold)
+
+	# Multiple file uploader allows user to add their own TIF images
+	uploaded_file = st.file_uploader("Drag and drop folder containing the images", type=["tif", "tiff"], accept_multiple_files=False)
 	
 	submitted = st.form_submit_button('Analyze')
 
