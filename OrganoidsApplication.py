@@ -44,7 +44,7 @@ st.set_page_config(page_title = 'OrganoIDNet', page_icon = image_bytes, layout =
 st.title(':blue[Analyze Organoids using OrganoIDNet]')
 
 url = "https://doi.org/10.1007/s13402-024-00958-2"
-st.markdown("Refer to :blue[[link](%s)] for more information" % url)
+st.markdown("Refer to :blue[[this publication](%s)] for more information about :blue[OrganoIDNet] and it's applications." % url)
 
 with st.form(key = 'form1', clear_on_submit = False):
 
