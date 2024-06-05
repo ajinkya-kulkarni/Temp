@@ -42,6 +42,7 @@ st.set_page_config(page_title = 'OrganoIDNet', page_icon = image_bytes, layout =
 # Title of the web app
 
 st.title(':blue[Analyze Organoids using OrganoIDNet]')
+st.markdown(':blue[Refer to https://doi.org/10.1007/s13402-024-00958-2 for more information]')
 
 with st.form(key = 'form1', clear_on_submit = False):
 
@@ -50,9 +51,7 @@ with st.form(key = 'form1', clear_on_submit = False):
 
 	# Number input for live/dead threshold
 	live_dead_threshold = st.number_input(
-	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids.\n"
-	    "Convert your image to 8-bit grayscale to determine a custom value. Default is 50.\n"
-	    "Refer to https://doi.org/10.1007/s13402-024-00958-2 for more information.",
+	    "Set the intensity threshold (0-255) for distinguishing live/dead organoids. "Convert your image to 8-bit grayscale to determine a custom value. Default is 50.",
 	    min_value=0, max_value=255, value=50, step=1
 	)
 
