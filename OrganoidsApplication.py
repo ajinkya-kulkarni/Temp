@@ -28,7 +28,7 @@ from modules import *
 model_path = 'OrganoidsTrainedModel'
 
 window_size = 800
-overlap = int(0.5 * window_size)
+overlap = int(0.1 * window_size)
 
 ###########################################################################################
 
