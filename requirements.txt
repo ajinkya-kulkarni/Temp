@@ -3,7 +3,7 @@ numpy<2
 Pillow
 pandas
 matplotlib
-opencv-python
+opencv-python-headless
 scikit-image
 torch
 torchvision
