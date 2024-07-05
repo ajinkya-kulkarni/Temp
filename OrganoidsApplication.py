@@ -41,7 +41,7 @@ st.set_page_config(page_title = 'OrganoIDNet', page_icon = image_bytes, layout =
 
 # Title of the web app
 
-st.title(':blue[Analyze Organoids using OrganoIDNet]')
+st.title(':blue[Organoid segmentation using OrganoIDNet]')
 
 url1 = "https://doi.org/10.1007/s13402-024-00958-2"
 url2 = "https://www.biorxiv.org/content/10.1101/2024.02.12.580032v1"
