@@ -48,7 +48,7 @@ url2 = "https://www.biorxiv.org/content/10.1101/2024.02.12.580032v1"
 url3 = "https://github.com/ajinkya-kulkarni/PyOrganoIDNet"
 st.markdown("Refer to the following sources for more information about :blue[[OrganoIDNet](%s)], its development and its applicability: :blue[[Article #1](%s)] and :blue[[Article #2](%s)]." % (url3, url1, url2))
 st.markdown('Application source code available [here](https://github.com/ajinkya-kulkarni/Temp). Sample image to test this application is available [here](https://github.com/ajinkya-kulkarni/Temp/blob/main/TestImage.tif).')
-st.caption('Note that an image of the size of 1500x1000 pixels would take approximately 1-2 minutes to be analzyed.')
+st.caption('Note that an image of the size of 1500x1000 pixels would take approximately 1-2 minutes to be analyzed.')
 
 with st.form(key = 'form1', clear_on_submit = False):
 
