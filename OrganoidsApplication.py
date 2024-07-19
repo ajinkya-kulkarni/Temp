@@ -81,6 +81,11 @@ with st.form(key = 'form1', clear_on_submit = False):
 		# Convert the image to a numpy array
 		image_array = np.array(image)
 
+		# Check the dimensions of the image
+		if image_array.shape[0] < window_size or image_array.shape[1] < window_size:
+			st.error('Image must be larger than 800x800 pixels')
+			st.stop()
+		
 		normalized_img = read_image_as_grayscale_then_MinMax_normalize(image_array)
 
 		###########################################################################################
