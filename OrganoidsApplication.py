@@ -58,7 +58,7 @@ with st.form(key = 'form1', clear_on_submit = False):
 	live_dead_threshold = int(live_dead_threshold)
 
 	# Multiple file uploader allows user to add their own TIF images
-	uploaded_file = st.file_uploader("Drag and drop folder containing the images", type=["tif", "tiff", "png", "jpg"], accept_multiple_files=False)
+	uploaded_file = st.file_uploader("Drag and drop the image", type=["tif", "tiff", "png", "jpg"], accept_multiple_files=False)
 	
 	submitted = st.form_submit_button('Analyze')
 
